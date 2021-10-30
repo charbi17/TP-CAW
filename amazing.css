@@ -1,0 +1,79 @@
+/***
+by Charbi Abdellah Mohcen - G2 TP3 -
+***/
+
+img {
+    border: 1px solid red;
+}
+
+h1 {
+    background-color: black;
+}
+
+h1, h2 {
+    color: gray;
+}
+
+section.s h2 {
+    border: 1px solid green;
+}
+
+#mon > span {
+    color: pink;
+}
+
+#mon div {
+    border: 1px solid red;
+}
+
+#mon > div > span {
+    background-color: yellow;
+}
+
+#wed:hover h2 {
+    color: green;
+}
+
+#mon:hover h2,
+#tue:hover h2 {
+    color: red;
+}
+
+/* Propriété de spécificité */
+
+/* 11 */
+h1, h2 {
+    color: pink;
+}
+
+/* 12 - the color will be changed */
+
+/* 13 */
+li:first-of-type {
+    font-weight: bold;
+}
+
+/* 14 */
+li:nth-of-type(2) {
+    color: red;
+}
+
+/* 15 */
+#tue span:first-of-type{
+    color: blue;
+}
+
+/* 16 */
+#tue span:nth-of-type(2){
+    font-size: 200%;
+}
+
+/* 17 */
+li:nth-of-type(9) {
+    color: blue;
+}
+
+/* 18 */
+li:nth-of-type(5n+3) {
+    color: green;
+}
